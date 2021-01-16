@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso em Video</title>
+  <style>
+    body {
+      background-color: rgb(126, 126, 218);
+      color: white;
+      font-weight: normal;
+      font-size: 20pt;
+      font-family: Arial;
+    }
+
+    body h1 {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola Mundo!</h1>
+  <p>Já me livre da maldiçaõ</p>
+
+
+  <script>
+    var n1 = window.prompt('Digite um numero: '); // o numero que sera introducido no formulario sera retornardo e atribudo na variavel 'n1' como uma 'String' devido a que prompt sempre retorna os valores como 'String' o que não permitira a soma, sera feito uma concatenação de 'Strings'
+    var n2 = window.prompt('Digite outro numero: '); // mesmo caso
+    var s1 = (n1 + n2);
+      window.alert(`A soma dos valores é ` + s1); // aqui se aprecia que não temos uma soma ou adicão e sim uma concatenação de 'strings'
+
+// no seguinte exercio podemos ver como podemos corrigir isto convertendo o um valor de tipo 'string' em 'number'
+   
+    var n3 = Number.parseInt(window.prompt('Digite o primer numero: ')); // Number.parseInt(n) é utilizado para convertir um valor 'string' em um 'Number entero' osea (1, 2, 3)
+    var n4 = Number.parseFloat(window.prompt('Digite o segundo numero: ')); // Number.parseFloat(n) é utilizado para convertir um valor 'string' em um 'Number real ou float' osea (1.5, 2.3, 3.4)
+    var n5 = Number(window.prompt('Digite o terceiro numero: ')); // só Number(n) ou tambien +() seria utilizado para convertir um valor 'string' em um 'Number Entero ou real/float' osea (1, 1.5, 2, 2.5)
+    var s2 = (n3 + n4 + n5);
+    window.alert(`A soma entre ${n3} + ${n4} + ${n5} é igual a: ${s2}`); 
+  
+  // (Number + Number) para adição
+  // (String + String) para concatenação
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 10</title>
+
+  <style>
+    div#area {
+      background: rgb(42, 139, 42);
+      color: #fff;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 20pt;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <div id="area">Interaja...</div>
+  <!-- Desta forma se aplica eventos directamente em HTML 
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()  ">Interaja...</div> 
+  -->
+  <script>
+    var a = window.document.getElementById("area");
+    // Aplicar eventos desde JavaScript adicionando um ouvinte de eventos
+    a.addEventListener("click" , clicar);
+    a.addEventListener("mouseenter" , entrar);
+    a.addEventListener("mouseout" , saiu);
+
+    function clicar() {
+      a.innerText = "Clicou!"
+      a.style.background = "red";
+    }
+    function entrar() {
+      a.innerText = "Entrou!"
+    } 
+    function saiu() {
+      a.innerText = "Saiu!"
+      a.style.background = "green";
+    }
+
+  </script>
+</body>
+</html>

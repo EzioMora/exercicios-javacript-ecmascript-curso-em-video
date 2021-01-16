@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Vamos Contar!</h1>
+    </header>
+
+    <section class="calc-wrapper">
+
+        <div class="formulario">
+        
+            <div class="forms">
+                <label for="txtn1">Inicio: </label>
+                <input type="number" name="txtn1" id="txtn1" min="0" onkeypress="return event.charCode >= 48" />
+            </div>
+        
+            <div class="forms">
+                <label for="txtn2">Fin: </label>
+                <input type="number" name="txtn2" id="txtn2" min="0" onkeypress="return event.charCode >= 48" ?>
+            </div>
+        
+            <div class="forms">
+                <label for="txtn3">Passo: </label>
+                <input type="number" name="txtn3" id="txtn3" min="0" onkeypress="return event.charCode >= 48" />
+            </div>
+        
+            <div class="forms">
+                <input type="button" value="Contar" id='contar'>
+            </div>
+        
+        </div>
+
+        <div id="res">
+            Resultado...
+        </div>
+
+    </section>
+
+    <footer>
+        
+        <p>
+            &copy; Curso em Video
+        </p.>
+    
+    </footer>
+
+    <script src="scripts/mains.js""></script>
+</body>
+</html>

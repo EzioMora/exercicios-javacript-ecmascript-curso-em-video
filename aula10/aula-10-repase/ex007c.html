@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somando Numeros</title>
+
+  <style>
+    #res {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Somando Valores
+  </h1>
+  <input type="number" id="txtn1">
+  <input type="number"  class="txtn2">
+  <input type="button" value="Sumar" id="sumar">
+  <div id='res'>
+    Resultado...
+  </div>
+  
+  <div class="res"></div>
+
+  <script>
+
+    var btnSomar = document.querySelector('#sumar');
+        btnSomar.addEventListener('click', clicar);
+    
+    function clicar() {
+      var tn1 = document.getElementById('txtn1');
+      var tn2 = document.getElementsByClassName('txtn2')[0];
+      var res = document.querySelector('#res');
+      var somar = +(tn1.value) + +(tn2.value); 
+          res.innerHTML = (`<strong>A soma de ${tn1.value} e ${tn2.value} é igual a: ${somar}</strong>`)
+   }
+  </script>
+</body>
+</html>

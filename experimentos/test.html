@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Analisador de Números</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    
+    <body class="body-wrapper">
+        
+        <header class="header">
+            <h1 class="header-wrapper">
+                Analisador de Números
+            </h1>
+        </header>
+
+        <section class="content">
+            
+            <div class="content_form-wrapper">
+                
+                <label for="form-text-number">Número (entre 1 e 10): </label>
+                <input type="number" name="form-text-number" id="form-text-number" min="1"/>
+                <input type="button" value="Adicionar" name="btn-add" id="btn-add" />
+            
+            </div>
+
+            <div class="content_res-wrapper">
+                <select class="added-items-wrapper" size="10"></select>
+                <input type="button" value="Finalizar" id="btn-finish" />
+
+                <p class="res-finish-wrapper">
+                    Analisando...
+                </p>
+            </div>
+        
+        </section>
+
+        <footer class="end">
+            <p class="end_copyrigth-wrapper">
+                &copy; CursooemVideo
+            </p>
+        </footer>
+        <script src="test.js"></script>
+    </body>
+</html>

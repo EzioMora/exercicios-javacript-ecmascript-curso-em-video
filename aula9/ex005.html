@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeros Pasos em DOM</title>
+  <style>
+    body {
+      background: rgb(68, 125, 199);
+      color: #fff;
+      font-weight: normal;
+      font-size: 18pt;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1 name="0">Iniciando estudos com DOM</h1>
+  <p id="parrafo1" class="background">Aqui vai o resultado</p>
+  <p id="id" class="class" name='1'>Aprendendo a utilizar o <strong>Dom</strong> em JavaScript.</p>
+  <div>Clique em mim</div>
+
+  <script>
+    // Seleccionando por "Marca/Etiqueta" ou "TagName"
+    var corpo = window.document.body;
+    corpo.style.background = 'Black';
+    var p1 = window.document.getElementsByTagName('p')[1];
+    p1.style.color = 'yellow';
+
+    // Acessando mediante "id"
+    var p0 = document.getElementById('parrafo1');
+    p0.style.color = 'red';
+  
+    // Acessando mediante "name"
+    var title = document.getElementsByName('0')[0];
+    title.style.color = 'Blue';
+
+    // Acessando mediante "ClassName"
+    var p0_background = document.getElementsByClassName("background")[0];
+    p0_background.style.background = 'white';
+
+    // Acessando mediante "Seletor"
+    var p1_background = document.querySelector('p[name="1"]');
+    p1_background.style.background = 'white';
+    // Nele pode ser utilizado name ([name='n']), id (#id), class (.class) e também pode ser o elemento + name, id ou class. Exemplo p.class
+  </script>
+</body>
+</html>
